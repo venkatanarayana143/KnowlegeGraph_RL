@@ -164,7 +164,7 @@ This serves the retrieval API used by KG-R1 on `http://127.0.0.1:8001/retrieve`.
 
 Train KG-R1 on CWQ with GRPO:
 ```bash
-bash train_grpo_kg_qwen_3b_cwq_f1_turn5.sh
+bash train_grpo_kg_qwen_3b_cwq_f1_turn7.sh
 ```
 
 The repository also includes related training variants for different turn budgets and datasets.
