@@ -3,7 +3,7 @@
 # Script: multiprocess_freebase.sh
 # Fast parallel Freebase RDF extraction using Python multiprocessing
 
-RDF_FILE="freebase-rdf-latest.gz"
+RDF_FILE="freebase-easy-latest.zip"
 OUTPUT_JSON="freebase_mid_gid_to_names.json"
 
 # Check if RDF file exists
@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     print(f"🚀 Started parsing: {datetime.now()}")
 
-    with gzip.open("freebase-rdf-latest.gz", 'rt', encoding='utf-8', errors='ignore') as f:
+    with gzip.open("freebase-easy-latest.zip", 'rt', encoding='utf-8', errors='ignore') as f:
         for line in f:
             chunk.append(line)
             line_count += 1
